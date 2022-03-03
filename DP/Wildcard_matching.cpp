@@ -31,3 +31,4 @@ bool isMatch(string s, string p) {
     }
  
     return dat[n][m];
+}
