@@ -55,13 +55,11 @@ int intersectPoint(Node *head1, Node *head2)
          if(cnt1 > cnt2)
          {
              int diff = cnt1-cnt2;
-             temp1 = head1;
              while(diff != 0)
              {
                  temp1 = temp1->next;
                  diff--;
              }
-             temp2 = head2;
              while(temp1 != NULL && temp2 != NULL)
              {
                  if(temp1 == temp2)
@@ -75,13 +73,11 @@ int intersectPoint(Node *head1, Node *head2)
          else
          {
             int dif = cnt2-cnt1;
-            temp2 = head2;
             while(dif != 0)
             {
                 temp2 = temp2->next;
                 dif--;
             }
-            temp1 = head1;
             while(temp1 != NULL && temp2 != NULL)
              {
                  if(temp1 == temp2)
